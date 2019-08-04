@@ -1,5 +1,5 @@
-var width;
-var height;
+var canvasWidth;
+var canvasHeight;
 var grid = [];
 var ctx;
 var alive;
@@ -82,7 +82,7 @@ function checkNeighbors(i, j, xMax, yMax, isLive) {
 }
 
 function playGame(xMax, yMax, r, n){
-  ctx.clearRect(0, 0, width, height);
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
   var gridCopy = [];
   for (var y = 0; y < yMax; y++){
     for (var x = 0; x < xMax; x++){
@@ -101,7 +101,7 @@ function playGame(xMax, yMax, r, n){
 }
 
 function setupGame(xMax, yMax, r, n){
-  ctx.clearRect(0, 0, width, height);
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
   for (var y = 0; y < yMax; y++){
     for (var x = 0; x < xMax; x++){
       alive = Math.floor(Math.random()*3);
@@ -128,8 +128,8 @@ function stopClickHandler() {
 
 $(document).ready(function(){
   ctx = $("#canvas")[0].getContext('2d');
-  height = $("#canvas").width();
-  width = $("#canvas").height();
+  canvasHeight = $("#canvas").width();
+  canvasWidth = $("#canvas").height();
 
   cycle = 0;
   setupGame(xMax, yMax, r, n);
