@@ -1,0 +1,25 @@
+{
+  "name": "conwaysgameoflife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambdaxy/ConwaysGameOfLife.git"
+  },
+  "author": "Frederic Crespo Arredondo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lambdaxy/ConwaysGameOfLife/issues"
+  },
+  "homepage": "https://github.com/lambdaxy/ConwaysGameOfLife#readme"
+}
