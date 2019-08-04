@@ -113,32 +113,13 @@ function setupGame(xMax, yMax, r, n){
   cycle++;
 }
 
-function printGrid(grid, xMax, yMax){
-  var printed = "";
-  for (var i = 0; i < grid.length; i++){
-    printed += grid[i];
-    if (i%yMax == 0 && i != 0){
-      printed += "<br>";
-    }
-  }
-  $("#printed").html(printed);
-}
-
-function init(){
-  ctx = $("#canvas")[0].getContext('2d');
-  height = $("#canvas").width();
-  width = $("#canvas").height();
-
-  cycle = 0;
-  setupGame(xMax, yMax, r, n);
-}
-
 function startClickHandler() {
     intervalId = setInterval(function() {playGame(xMax, yMax, r, n)}, 75);
 }
 
 function resetClickHandler() {
-    init();
+  cycle = 0;
+  setupGame(xMax, yMax, r, n);
 }
 
 function stopClickHandler() {
@@ -146,6 +127,10 @@ function stopClickHandler() {
 }
 
 $(document).ready(function(){
+  ctx = $("#canvas")[0].getContext('2d');
+  height = $("#canvas").width();
+  width = $("#canvas").height();
 
-  init();
+  cycle = 0;
+  setupGame(xMax, yMax, r, n);
 });
