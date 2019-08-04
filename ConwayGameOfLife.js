@@ -1,3 +1,11 @@
+function startClickHandler() {
+    alert("Start");
+}
+
+function resetClickHandler() {
+    alert("Reset");
+}
+
 $(document).ready(function(){
   var width;
   var height;

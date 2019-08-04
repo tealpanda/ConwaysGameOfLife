@@ -13,10 +13,22 @@
   <body>
 
     <div class="container">
+
       <h1>Conway's Game of Life</h1>
-      <canvas id="canvas" width="500" height="500"></canvas>
+
+      <div class="row">
+        <canvas id="canvas" width="500" height="500"></canvas>
+      </div>
+
+      <div class="row">
+        <div class="btn-group" role="group" aria-label="GameofLife Menu">
+          <button type="button" class="btn btn-outline-primary" onclick="startClickHandler()">Start</button>
+          <button type="button" class="btn btn-outline-primary" onclick="resetClickHandler()">Reset</button>
+        <div>
+      </div>
+
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
