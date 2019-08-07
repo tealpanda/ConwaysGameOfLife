@@ -12,9 +12,16 @@
   </head>
   <body>
 
-    <div class="container">
+    <header class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <h1>Conway's Game of Life</h1>
+        </div>
+      </div>
 
-      <h1>Conway's Game of Life</h1>
+    </header>
+
+    <div class="container">
 
       <div class="row">
         <canvas id="canvas" width="500" height="500"></canvas>
@@ -25,10 +32,18 @@
           <button type="button" class="btn btn-outline-primary" onclick="startClickHandler()">Start</button>
           <button type="button" class="btn btn-outline-primary" onclick="stopClickHandler()">Stop</button>
           <button type="button" class="btn btn-outline-primary" onclick="resetClickHandler()">Reset</button>
-        <div>
+        </div>
       </div>
 
     </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <p> Copyright 2019 © Frederic Crespo</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
